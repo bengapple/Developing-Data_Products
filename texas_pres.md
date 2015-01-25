@@ -1,27 +1,26 @@
-Executed Offenders
+Executed Offenders Database Search
 ===
 author: Ben Apple
 date: 16JAN2015
 transition: rotate
 
-An App of Executed Offenders by
+Offenders Executed  by
     Texas Department of Criminal Justice 
 
-Texas Department of Criminal Justice 
+Executed Offenders 
 ===
 
-<small>The Texas Department of Criminal Justice (TDCJ) manages offenders in state prisons, state jails and private correctional facilities that contract with TDCJ. The agency also provides funding and certain oversight of community supervision (previously known as adult probation) and is responsible for the supervision of offenders released from prison on parole or mandatory supervision. 
+<small>The Texas Department of Criminal Justice (TDCJ) manages offenders in state prisons, state jails and private correctional facilities that contract with TDCJ. The agency also provides funding and certain oversight of community supervision (previously known as adult probation) and is responsible for the supervision of offenders released from prison on parole or mandatory supervision.</small> 
 
-In addition the TDCJ keeps a database of all offenders executed by the state</small>
+<small>On the darker side the TDCJ keeps a database of all offenders executed by the state.  This application makes use of the executed offenders database.  For those that are interested that data can be found at: http://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html.</small>
 
-Web Page: http://www.tdcj.state.tx.us
 
-Data: http://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html
 
-About App (1/2)
+
+About App
 ========================================================
+During the time span 1982 tthrough 2014 the state of Teaxs executed 515 felons convicted of a capitol crime.  This application allows the user to segment that population by the following attributes:
 
-This application uses the following six fields from that database: 
 * Last Name
 * First Name
 * Age 
@@ -30,27 +29,27 @@ This application uses the following six fields from that database:
 * County
 
 
-About App (2/2)
+Summary on how to use the application
 ========================================================
 
-Each tab shows corresponding histogram.
+Each tab of the application displays the specific data in histogram format, as bound by the tuning criteria.
 
-You can dynamicly change histograms on each tabs using Tuning pane on the left side
+The user can dynamicly change histograms on each tabs using Tuning criteria in the pane on the left side
 
 There is boundary check for Age, but no input type check at all
 
-Encountering any error while tuning means that THERE IS NO SUCH DATA (empty sub set) [I'm unsuccessful updating inputText from server.R]
+Encountering any error while tuning means that THERE IS NO SUCH DATA (empty sub set).
 
-Encountering any error while tuning: JUST SIMPLY DELETE OR UPDATE YOUR TUNING PARAMETER/S
+If the user encounters any error while tuning: JUST SIMPLY DELETE OR UPDATE YOUR TUNING PARAMETER/S
 
 Thank You
 ========================================================
 
-<small> The below table is a brief summary of the data </small>
+<small> The below table is a summary of the Texas Department of Criminal Justice data used by this application</small>
 
 
 ```r
-rawData <- read.csv("D:/RFiles/texas data product/data_texas.csv")
+rawData <- read.csv("rData.csv")
 summary(rawData)
 ```
 

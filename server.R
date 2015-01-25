@@ -1,14 +1,7 @@
-
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
-
 library(shiny) 
-library(descr) #freq fuction
+library(descr) 
 
-rawData <- read.csv("data_texas.csv")
+rawData <- read.csv("rData.csv")
 processedData <- rawData
 
 
